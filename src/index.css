@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", sans-serif;
+
+  --color-brand-orange: #fdb44b;
+  --color-brand-yellow: #ffc233;
+  --color-brand-teal: #0f4247;
+  --color-brand-navy: #0a1d2a;
+
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-brand-navy);
+  -webkit-font-smoothing: antialiased;
+}
